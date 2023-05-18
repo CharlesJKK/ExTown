@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graph"
+    app:startDestination="@id/homeOne">
+
+    <fragment
+        android:id="@+id/homeOne"
+        android:name="com.example.extown.home.home1.HomeOneFragment"
+        android:label="HomeFragmentOne"
+        tools:layout="@layout/fragment_home_one">
+        <action
+            android:id="@+id/action_homeOne_to_homeTwo"
+            app:destination="@id/homeTwo" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeTwo"
+        android:name="com.example.extown.home.home2.HomeTwoFragment"
+        android:label="HomeFragmentTwo"
+        tools:layout="@layout/fragment_home_two">
+        <action
+            android:id="@+id/action_homeTwo_to_homeThree"
+            app:destination="@id/homeThree" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeThree"
+        android:name="com.example.extown.home.home3.HomeThreeFragment"
+        android:label="HomeFragmentThree"
+        tools:layout="@layout/fragment_home_three" />
+
+</navigation>
