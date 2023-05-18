@@ -22,13 +22,13 @@ class HomeThreeFragment : Fragment() {
         closeButton = view.findViewById(R.id.buttonCloseActivity)
 
         closeButton?.setOnClickListener {
-            onNextFragmentButtonClicked()
+            onCloseFragmentButtonClicked()
         }
 
         return view
     }
 
-    private fun onNextFragmentButtonClicked() {
+    private fun onCloseFragmentButtonClicked() {
         activity?.finish()
     }
 }
